@@ -122,7 +122,6 @@ export default function Page() {
 									<Slack size={16} />
 									Slack
 								</span>
-									UsersRound,
 							</a>
 							<a className="menuItem" href="#">
 								<span className="menuLead">
@@ -144,6 +143,9 @@ export default function Page() {
 				<main className="mainPanel">
 					<header className="topBar">
 						<div className="searchRow">
+							<button className="iconBtn" type="button" aria-label="Back">
+								<ChevronLeft size={16} />
+							</button>
 							<label className="searchBox">
 								<Search size={16} />
 								<input type="text" placeholder="Search" />
@@ -307,16 +309,16 @@ export default function Page() {
 						<article className="blockCard conversionCard">
 							<h3>Conversion</h3>
 							<div className="gaugeWrap">
-								<ResponsiveContainer width="100%" height={250}>
+								<ResponsiveContainer width="100%" height={248}>
 									<RadialBarChart
 										data={conversionData}
 										cx="50%"
-										cy="99%"
+										cy="98%"
 										startAngle={180}
 										endAngle={0}
-										innerRadius="52%"
-										outerRadius="98%"
-										barSize={34}
+										innerRadius="59%"
+										outerRadius="108%"
+										barSize={30}
 									>
 										<defs>
 											<linearGradient id="conversionGradient" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -334,7 +336,7 @@ export default function Page() {
 											dataKey="value"
 											fill="url(#conversionGradient)"
 											background={{ fill: "#e8e8fa" }}
-											cornerRadius={18}
+											cornerRadius={22}
 										/>
 									</RadialBarChart>
 								</ResponsiveContainer>
@@ -414,13 +416,13 @@ export default function Page() {
 				.brandIcon {
 					width: 32px;
 					height: 32px;
-					border-radius: 50%;
 					background: #f2cc56;
 					color: #21263d;
 					font-size: 14px;
 					font-weight: 800;
 					display: grid;
 					place-items: center;
+					clip-path: polygon(25% 6%, 75% 6%, 94% 50%, 75% 94%, 25% 94%, 6% 50%);
 				}
 
 				.brandText {
@@ -571,7 +573,7 @@ export default function Page() {
 				.searchBox {
 					height: 44px;
 					flex: 1;
-					max-width: 520px;
+					max-width: 500px;
 					display: flex;
 					align-items: center;
 					gap: 8px;
@@ -1005,23 +1007,28 @@ export default function Page() {
 				.conversionCard {
 					display: flex;
 					flex-direction: column;
-					justify-content: space-between;
-					min-height: 360px;
+					justify-content: flex-start;
+					min-height: 340px;
+					gap: 8px;
+				}
+
+				.conversionCard h3 {
+					margin-bottom: 0;
 				}
 
 				.gaugeWrap {
 					position: relative;
-					margin-top: 2px;
+					margin-top: 0;
 					margin-bottom: 0;
-					min-height: 250px;
+					min-height: 235px;
 				}
 
 				.gaugeNeedle {
 					position: absolute;
-					left: 70.5%;
-					top: 36.5%;
+					left: 78%;
+					top: 44%;
 					width: 4px;
-					height: 58px;
+					height: 54px;
 					background: #9ea4ea;
 					border-radius: 999px;
 					transform: rotate(52deg);
@@ -1058,7 +1065,7 @@ export default function Page() {
 					display: flex;
 					justify-content: space-between;
 					gap: 12px;
-					margin-top: -2px;
+					margin-top: -4px;
 					padding-top: 0;
 				}
 
