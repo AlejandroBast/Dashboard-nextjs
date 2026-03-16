@@ -1,5 +1,9 @@
 # Dashboard Flex
 
+![Vista del dashboard](/dashboard-preview.png)
+
+Coloca la captura en `public/dashboard-preview.png` para que se renderice en GitHub y local.
+
 Proyecto frontend construido con Next.js para replicar un dashboard administrativo moderno basado en una referencia visual.
 
 ## Tecnologías
