@@ -1,8 +1,8 @@
 # Dashboard Flex
 
-![Vista del dashboard](/dashboard-preview.png)
+![Vista del dashboard](https://cdn.discordapp.com/attachments/1211120524961386607/1483161568538660954/image.png?ex=69b99559&is=69b843d9&hm=92181296c6fc671fc78322cc05a29fb01906c0e8c34918ef9afeb95461d75520&)
 
-Coloca la captura en `public/dashboard-preview.png` para que se renderice en GitHub y local.
+
 
 Proyecto frontend construido con Next.js para replicar un dashboard administrativo moderno basado en una referencia visual.
 
